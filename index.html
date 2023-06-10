@@ -2,38 +2,193 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Matahi Historical Society homepage</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAUKAI Restaurant Home page</title>
+    <link rel="stylesheet" href="styles/style.css">   <!-- css file -->
+    <style>
+      body {
+        background-image: url('images/bread.jpg');
+        width: 100%;
+        background-repeat: repeat-y;
+        background-position: center 150px;
+        background-size: contain;
+      }
+      </style>
+
   </head>
+    
   <body>
-    <!-- hgdckmh Here is our main header that is used across all the pages of our website -->
+  <!-- LOGO and navigation bar included hamburger menu-->
+  <div class="rowheader">
     <header class="header">
-      <h1>Matahi Historical Society</h1>
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+         <img src= "images/LOGO.png"
+            alt= "Logo of the Haukai restaurant"
+            width= "128"
+            height= "85">
+      </a>
+      <!-- Hamburger icon -->
+      <input class="side-menu" type="checkbox" id="side-menu"/>
+      <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+      <!-- Menu -->
+      <nav class="nav">
+          <ul class="menu">
+              <li><a href="index.html" class="topnav">Home</a></li>
+              <li><a href="menu.html" class="topnav">Menu</a></li>
+              <li><a href="reservation.html" class="topnav">Reservations</a></li>
+              <li><a href="gift.html" class="topnav">Gift Vouchers</a></li>
+              <li><a href="about.html" class="topnav">About Us</a></li>
+              <li><a href="contact.html" class="topnav">Contact Us</a></li>
+              <li><a href="staff/staff.html" class="topnav">Staff login</a></li>
+          </ul>
+      </nav>
     </header>
-    <nav class="topnav">
-      <a href="#" class="topnav">Home</a></li>
-      <a href="#" class="topnav">Browse photos</a></li>
-      <a href="#" class="topnav">Submit photos</a></li>
-      <a href="contact.html" class="topnav">Contact</a></li>
-    </nav>
-    <!-- Here is our page's main content -->
-    <main>
-      <div class="row">
-        <div class="column">
-          <h2>Column 1</h2>
-          <p>Paragraph 1.</p>
-          <p>Paragraph 2.</p>
+  </div>
+  <div class="rowheader">
+      <!-- Name -->
+      <a href="index.html" class="logo">The HAUKIA Restaurant</a>
+  </div>
+   
+  <!-- Here start the page main content -->
+  <main>
+
+    
+    
+    
+
+    <br><br><br>
+    <h1 id="identified4">OUR MENU</h1>
+
+    <p id="identified4"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales, risus et maximus aliquet, 
+      ipsum enim accumsan tortor, at aliquet diam lorem vitae urna. Proin posuere id lectus non tempus. Nunc 
+      hendrerit quis enim at gravida. Pellentesque eu consequat tellus. In sit amet interdum leo. 
+      Pellentesque vel elit fringilla, sollicitudin felis euismod, pellentesque enim. 
+      Donec eget neque condimentum, dignissim ex dapibus, tincidunt lorem. Nunc vulputate ex vel magna maximus rhoncus.
+     </b></p><br>
+
+     <!-- The buttons starts here -->
+    
+<buttons class="bbutton">
+  <div class="rowbutton">
+    <div class="b1">
+      <button onclick="window.location.href='menu.html';" id="identified">Full Menu</button>
+    </div>
+    <div class="b2">
+      <button onclick="window.location.href='menu.html';" id="identified">Appetizers</button>
+    </div>
+    <div class="b3">
+      <button onclick="window.location.href='menu.html';" id="identified">Mains</button>
+      
+    </div>
+    <div class="b4">
+      <button onclick="window.location.href='menu.html';" id="identified">Beverages</button>
+    </div>
+  </div>
+  <br>
+    
+</buttons>
+
+<br><br><br>
+    <h1 id="identified">RESERVATIONS</h1>
+
+    <p id="identified4"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu consequat tellus. In sit amet interdum leo.
+       Quisque sodales, risus et maximus aliquet, ipsum enim accumsan tortor, at aliquet diam lorem vitae urna. Proin posuere id lectus non tempus. 
+       Nunc hendrerit quis enim at gravida. Nunc vulputate ex vel magna maximus rhoncus.
+     </b></p><br>
+
+     <buttons class="bbutton">
+      <div class="rowbutton">
+        <div class="b1">
+          <button onclick="window.location.href='reservation.html';" id="identified">Check Availability</button>
         </div>
-        <div class="column">
-          <h2>Column 2</h2>
-          <p>Paragraph 1.</p>
-          <p>Paragraph 2.</p>
+        <div class="b2">
+          
+        </div>
+        <div class="b3">
+          
+        </div>
+        <div class="b4">
+          
         </div>
       </div>
-    </main>
-    <!-- And here is our main footer that is used across all the pages of our website -->
-    <footer class="footer">
-      <p>©Copyright 2018 by Matahi Historical Society. All rights reversed.</p>
-    </footer>
-  </body>
+      <br>
+        
+    </buttons>
+
+    <br><br><br>
+    <h1 id="identified5">GIFT VOUCHERS</h1>
+
+    <p id="identified4"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu consequat tellus. In sit amet interdum leo.
+       Quisque sodales, risus et maximus aliquet, ipsum enim accumsan tortor, at aliquet diam lorem vitae urna. Proin posuere id lectus non tempus. 
+       Nunc hendrerit quis enim at gravida. Nunc vulputate ex vel magna maximus rhoncus. Pellentesque eu consequat tellus. In sit amet interdum leo.
+       Quisque sodales, risus et maximus aliquet, ipsum enim accumsan tortor, at aliquet diam lorem vitae urna. 
+     </b></p><br>
+
+     <buttons class="bbutton">
+      <div class="rowbutton">
+        <div class="b1">
+          <button onclick="window.location.href='gift.html';" id="identified">Buy Vouchers</button>
+        </div>
+        <div class="b2">
+          
+        </div>
+        <div class="b3">
+          
+        </div>
+        <div class="b4">
+          
+        </div>
+      </div>
+      <br>
+        
+    </buttons>
+
+
+     
+
+    <br><br><br><br><br><br><br><br>
+
+    
+  </main>
+  
+  
+  
+  <!-- The footer starts here -->
+    
+<footer class="footer">
+  <div class="rowfooter">
+    <div class="one">
+      <br>
+      <img src= "images/LOGO.png"
+                  alt= "Logo of the Haukai restaurant"
+                  width= "128"
+                  height= "85">
+    </div>
+    <div class="two">
+      <br>
+      <p>1 Island Street</p>
+      <p>Kerikeri</p>
+      <p>Bay of Islands</p>
+      <p>09 401 4019</p>
+    </div>
+    <div class="three">
+      <br>
+      <p>HOURS</p><br>
+      <p>Mon-Tues  Closed</p>
+      <p>Wed-Sun  6pm-11pm</p>
+    </div>
+    <div class="four">
+      <br>
+      <p><a href="terms.html">Terms and Conditions</a></p><br>
+      <p><a href="policy.html">Privacy Policy</a></p>
+    </div>
+  </div>
+  <div class="rowfooter">
+      <br><p>©Copyright 2023 by The HAUKIA Restaurant. All rights reversed.</p>
+  </div><br>
+    
+</footer>
+
+</body>
 </html>

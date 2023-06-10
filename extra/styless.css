@@ -1,0 +1,361 @@
+/* Universal box sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Style the header */
+.rowheader {
+    overflow: hidden;
+    background-color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+h3, h4 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+h4 {
+    color: red;
+}
+
+h3,h4, p{
+    margin: 0;  /* if there is margin*/
+    padding:0;  /* if there is padding*/
+    line-height: 18px !important; /* you should set line height according to your requirement.*/
+ }
+
+
+#identified {
+    text-align: center;
+}
+#identified1 {
+    text-align: left;
+}
+#identified2 {
+    text-align: right;
+}
+#identified3 {
+    color: red;
+}
+
+
+.tab {padding-left:8em;}
+
+.tab2 {padding-right:400px;}
+
+
+ /* paraghrath on one line  */ 
+.gallery-text {
+    float: left;
+    width: 25%;
+    /* margin: 1%; */
+}
+.gallery-text p {
+    word-break: break-all;
+}
+
+.flex-parent-element {
+    display: flex;
+    width: 50%;
+  }
+  
+  .flex-child-element {
+    flex: 1;
+    /* border: 2px solid blueviolet; */
+    margin: 10px;
+  }
+  
+  .flex-child-element:first-child {
+    margin-right: 20px;
+  } 
+
+
+
+
+
+
+
+
+
+
+
+
+/* Create two equal columns that float next to each other */
+.columnheader {
+    float: left;
+    text-align: center;
+    background-color: orange;
+    padding: 25px;
+    border: 5px solid orange;
+    }
+
+/* Clear floats after the columns */
+.rowheader:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+/* Change color on hover */
+.topnav a:hover {   
+    background-color: white;
+        color:black;
+    }
+
+
+
+
+
+    /* Nav menu */
+.nav{
+    width: 100%;
+    height: 30%;
+    position: fixed;
+    background-color: var(--white);
+    overflow: hidden;
+
+}
+.menu a{
+    display: block;
+    padding: 30px;
+    color: var(--white);
+}
+.menu a:hover{
+    background-color: var(--gray);
+}
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+/* Menu Icon */
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}/* Style label tag */
+
+.hamb-line {
+    background: var(--white);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+} /* Hide checkbox */
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--gray);
+
+    }
+
+    .hamb{
+        display: none;
+    }
+}
+
+
+
+
+/* Create two equal columns that float next to
+ each other */
+ .column {
+    float:left;
+    /* width:50%; */   
+    padding: 15px;   
+background-color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* grey line for text */
+.line {
+    overflow: hidden;
+    background-color: grey;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+
+  .picone {
+    float: left;
+    width: 48%; /* The width is 40%, by default */
+  }
+  
+  .pictwo {
+    float: left;
+    width: 2%; /* The width is 20%, by default */
+  }
+  .picthree {
+    float: left;
+    width: 2%; /* The width is 40%, by default */
+  }
+  
+  .picfour {
+    float: right;
+    width: 48%; /* The width is 20%, by default */
+  }
+
+  
+
+/* Use a media query to add a break point at 560px: */
+@media screen and (max-width: 940px) {
+    .picone, .pictwo, .picthree, .picfour {
+      width: 100%; /* The width is 100%, when the viewport is 560px or smaller */
+    }
+  }
+
+
+/* Style the footer */
+.rowpic {
+    overflow: hidden;
+    background-color: white;
+}
+
+.pic {
+    background-color: grey;
+    text-align: center;
+    padding: 0;
+    
+}
+
+
+.one {
+    /*background-color: rgb(117, 110, 110);*/
+    /*padding: 2px;*/
+    float: left;
+    width: 25%; /* The width is 40%, by default */
+  }
+  
+  .two {
+    /*background-color: rgb(231, 189, 189);*/
+    /*padding: 2px;*/
+    float: left;
+    width: 25%; /* The width is 20%, by default */
+  }
+  .three {
+    /*background-color: rgb(199, 53, 53);*/
+    /*padding: 2px;*/
+    float: left;
+    width: 25%; /* The width is 40%, by default */
+  }
+  
+  .four {
+    /*background-color: rgb(236, 232, 232);*/
+    /*padding: 2px;*/
+    float: left;
+    width: 25%; /* The width is 20%, by default */
+  }
+
+  
+
+/* Use a media query to add a break point at 560px: */
+@media screen and (max-width: 560px) {
+    .one, .two, .three, .four {
+      width: 100%; /* The width is 100%, when the viewport is 560px or smaller */
+    }
+  }
+
+
+/* Style the footer */
+.rowfooter {
+    overflow: hidden;
+    background-color: grey;
+}
+
+
+
+
+.footer {
+    background-color: grey;
+    text-align: center;
+    padding: 0;
+    
+}

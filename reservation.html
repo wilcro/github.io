@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAUKAI Restaurant Reservation page</title>
+    <link rel="stylesheet" href="styles/style.css">   <!-- css file -->
+  </head>
+    
+  <body>
+  <!-- LOGO and navigation bar included hamburger menu-->
+  <div class="rowheader">
+    <header class="header">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+         <img src= "images/LOGO.png"
+            alt= "Logo of the Haukai restaurant"
+            width= "128"
+            height= "85">
+      </a>
+      <!-- Hamburger icon -->
+      <input class="side-menu" type="checkbox" id="side-menu"/>
+      <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+      <!-- Menu -->
+      <nav class="nav">
+          <ul class="menu">
+              <li><a href="index.html" class="topnav">Home</a></li>
+              <li><a href="menu.html" class="topnav">Menu</a></li>
+              <li><a href="reservation.html" class="topnav">Reservations</a></li>
+              <li><a href="gift.html" class="topnav">Gift Vouchers</a></li>
+              <li><a href="about.html" class="topnav">About Us</a></li>
+              <li><a href="contact.html" class="topnav">Contact Us</a></li>
+              <li><a href="staff.html" class="topnav">Staff login</a></li>
+          </ul>
+      </nav>
+    </header>
+  </div>
+  <div class="rowheader">
+      <!-- Name -->
+      <a href="index.html" class="logo">The HAUKIA Restaurant</a>
+  </div>
+   
+  <!-- Here start the page main content -->
+  <main>
+      
+      
+<h1>This is the reservations page</h1>
+
+
+<form>  
+    <br><br><br><br>
+   
+    <h5>Enter your first name</h5>    
+   <input type="text" name="username"><br><br>
+   
+   
+  <label for="birthdaytime"><b>Enter date and time of inquiry:</b></label><br>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
+  <h6>Bookings between the hours 6pm and 9pm</h6><br>
+  
+  <h5>Amount of guests</h5>    
+  <input type="text" name="username"><br><br>
+
+  <h5>Mobile Number</h5>    
+  <input type="text" name="username"><br><br>
+
+  <h5>Email Address</h5>    
+  <input type="text" name="username"><br><br>
+  <h5>We will email you soon with availability. Thanks</h5>
+
+  <button onclick="window.location.href='index.html';">CHECK AVAILABILITY</button>
+ </form>  
+ 
+    
+    </main>
+    
+    <br><br><br><br>
+    
+    <footer class="footer">
+        <div class="rowfooter">
+          <div class="one">
+            <br>
+            <img src= "images/LOGO.png"
+                        alt= "Logo of the Haukai restaurant"
+                        width= "128"
+                        height= "85">
+          </div>
+          <div class="two">
+            <br>
+            <p>1 Island Street</p>
+            <p>Kerikeri</p>
+            <p>Bay of Islands</p>
+            <p>09 401 4019</p>
+          </div>
+          <div class="three">
+            <br>
+            <p>HOURS</p><br>
+            <p>Mon-Tues  Closed</p>
+            <p>Wed-Sun  6pm-11pm</p>
+          </div>
+          <div class="four">
+            <br>
+            <p><a href="terms.html">Terms and Conditions</a></p><br>
+            <p><a href="policy.html">Privacy Policy</a></p>
+          </div>
+        </div>
+        <div class="rowfooter">
+            <br><p>©Copyright 2023 by The HAUKIA Restaurant. All rights reversed.</p>
+        </div><br>
+          
+      </footer>
+      
+      </body>
+      </html>
